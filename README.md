@@ -1,9 +1,9 @@
 # Multiplex Spatial Analysis (MxSPA) Toolbox <!-- omit in toc -->
 
-<figure align="center">
-    <img src="./images/tonsil_subpop2.png" alt="MxSPA Toolbox">
-    <figcaption align="center"><em>Multiplex tonsil tissues by Jiang Lab, BIDMC, HMS. © 2022, <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.</em></figcaption>
-</figure>
+<p align="center">
+    <img src="./images/tonsil_subpop2.png" alt="MxSPA Toolbox"><br>
+    <em>Multiplex tonsil tissues by Jiang Lab, BIDMC, HMS. © 2022, <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.</em>
+</p>
 
 - [Introduction](#introduction)
 - [Components](#components)
@@ -18,10 +18,10 @@ benchmarking and analyzing next-generation multiplex spatial image and data.
 Our objective is to enable unbiased, systematic, and reproducible analyses of 
 single-cell spatial data (RNAs, proteins, and metabolites).
 
-<figure align="center">
-    <img src="./images/MxSPA_example.png" alt="MxSPA Output">
-    <figcaption align="center"><em>Output from MxSPA Toolbox</em></figcaption>
-</figure>
+<p align="center">
+    <img src="./images/MxSPA_example.png" alt="MxSPA Output"><br>
+    <em>Segmentation accuracy evaluation using the MxSPA Toolbox</em>
+</p>
 
 ## Components
 * General scripting libraries
@@ -62,8 +62,8 @@ Please cite the following publication if you use MxSPA toolbox and/or data:
 The following labs contributed to the development of the toolbox
 |Contributors    | Organizations                              |
 |----------------|--------------------------------------------|
-|Lit-Hsin Loo (PI), Joey Lee Jia Ying | Complex Cellular Analysis Group, Bioinformatics Institute (BII), A*STAR, Singapore|
-| Sizun Jiang (PI), Yao Yu Yeo | Jiang Lab at BIDMC, Harvard Medical School, USA|
+|Lit-Hsin Loo (PI)<br> Joey Lee Jia Ying | Complex Cellular Analysis Group,<br>Bioinformatics Institute (BII), A*STAR, Singapore|
+| Sizun Jiang (PI)<br> Yao Yu Yeo | Jiang Lab at BIDMC,<br>Harvard Medical School, USA|
 
 ## Licenses
 
