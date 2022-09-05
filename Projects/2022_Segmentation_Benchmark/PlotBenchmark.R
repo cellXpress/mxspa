@@ -122,7 +122,7 @@ PlotPerf <- function(
 
 perf_data <- read_csv(
     here(
-        "Benchmarks", "2022_Segmentation_Benchmark", "results",
+        "Projects", "2022_Segmentation_Benchmark", "results",
         "performance.csv"
     ),
     name_repair = make.names,
@@ -136,7 +136,7 @@ ylim <- c(0.5, 1.0)
 ### Plot BEAS2B
 dataset_name <- "BEAS2B_Lung_Cells"
 filename <- here(
-    "Benchmarks", "2022_Segmentation_Benchmark", "results",
+    "Projects", "2022_Segmentation_Benchmark", "results",
     "BEAS2B_Lung_Cells_Perf.pdf"
 )
 
@@ -150,7 +150,7 @@ PlotPerf(
 ### Plot COVID Lung
 dataset_name <- "COVID_Lung_Tissues"
 filename <- here(
-    "Benchmarks", "2022_Segmentation_Benchmark", "results",
+    "Projects", "2022_Segmentation_Benchmark", "results",
     "COVID_Lung_Tissues_Perf.pdf"
 )
 
@@ -165,7 +165,7 @@ PlotPerf(
 ### Plot Lung Tumor
 dataset_name <- "Lung_Tumors"
 filename <- here(
-    "Benchmarks", "2022_Segmentation_Benchmark", "results",
+    "Projects", "2022_Segmentation_Benchmark", "results",
     "Lung_Tumor_Perf.pdf"
 )
 
@@ -179,7 +179,7 @@ PlotPerf(
 ### Plot Lung Tumor
 dataset_name <- "Tonsil_Tissues"
 filename <- here(
-    "Benchmarks", "2022_Segmentation_Benchmark", "results",
+    "Projects", "2022_Segmentation_Benchmark", "results",
     "Tonsil_Tissues_Perf.pdf"
 )
 
