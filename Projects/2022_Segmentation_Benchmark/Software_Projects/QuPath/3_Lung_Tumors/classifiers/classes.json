@@ -1,0 +1,39 @@
+{
+  "pathClasses": [
+    {
+      "name": "Unclassified"
+    },
+    {
+      "name": "PD-L1 (Opal 520)",
+      "color": -16711936
+    },
+    {
+      "name": "CD3 (Opal 540)",
+      "color": -32768
+    },
+    {
+      "name": "CK (Opal 620)",
+      "color": -65281
+    },
+    {
+      "name": "CD8 (Opal 650)",
+      "color": -65536
+    },
+    {
+      "name": "FOXP3 (Opal 690)",
+      "color": -256
+    },
+    {
+      "name": "DAPI",
+      "color": -16772609
+    },
+    {
+      "name": "CD68 (Opal 570)",
+      "color": -16711681
+    },
+    {
+      "name": "Ignore*",
+      "color": -4934476
+    }
+  ]
+}

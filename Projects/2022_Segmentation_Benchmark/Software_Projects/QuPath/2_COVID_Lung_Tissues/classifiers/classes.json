@@ -1,0 +1,27 @@
+{
+  "pathClasses": [
+    {
+      "name": "Unclassified"
+    },
+    {
+      "name": "DNA",
+      "color": -16776961
+    },
+    {
+      "name": "C1q",
+      "color": -16711936
+    },
+    {
+      "name": "CD15",
+      "color": -65536
+    },
+    {
+      "name": "CD68",
+      "color": -8192
+    },
+    {
+      "name": "Ignore*",
+      "color": -4934476
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "pathClasses": [
+    {
+      "name": "Unclassified"
+    },
+    {
+      "name": "Channel 1",
+      "color": -16776961
+    },
+    {
+      "name": "Channel 2",
+      "color": -16711936
+    },
+    {
+      "name": "Channel 3",
+      "color": -256
+    },
+    {
+      "name": "Channel 4",
+      "color": -65536
+    },
+    {
+      "name": "Ignore*",
+      "color": -4934476
+    }
+  ]
+}

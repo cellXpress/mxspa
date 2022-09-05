@@ -1,0 +1,145 @@
+{
+  "version": "0.3.2",
+  "createTimestamp": 1648110727158,
+  "modifyTimestamp": 1648110727158,
+  "uri": "file:/H:/Research/cellXpress_scripting/Benchmarks/2022_Segmentation_Benchmark/Software_Projects/QuPath/2_COVID_Lung_Tissues/project.qpproj",
+  "lastID": 2,
+  "images": [
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/H:/Research/2022_07_cX2_COVID_Lung_Tissues/COVID19_Lung_Tissue_Images-JY22001/A01/High_C1q-A01_p1t0.ome.tif",
+        "args": [
+          "--series",
+          "0"
+        ],
+        "metadata": {
+          "name": "High_C1q-A01_p1t0.ome.tif",
+          "width": 3240,
+          "height": 3840,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": false,
+          "pixelType": "UINT16",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 3240,
+              "height": 3840
+            }
+          ],
+          "channels": [
+            {
+              "name": "DNA",
+              "color": -16776961
+            },
+            {
+              "name": "C1q",
+              "color": -16711936
+            },
+            {
+              "name": "CD15",
+              "color": -65536
+            },
+            {
+              "name": "CD68",
+              "color": -8192
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "z-slice"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 3240,
+          "preferredTileHeight": 40
+        }
+      },
+      "entryID": 1,
+      "randomizedName": "1f635514-6b6d-4272-aede-46f944156462",
+      "imageName": "High_C1q-A01_p1t0.ome.tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.bioformats.BioFormatsServerBuilder",
+        "uri": "file:/H:/Research/2022_07_cX2_COVID_Lung_Tissues/COVID19_Lung_Tissue_Images-JY22001/A02/LowC1q-A02_p1t0.ome.tif",
+        "args": [
+          "--series",
+          "0"
+        ],
+        "metadata": {
+          "name": "LowC1q-A02_p1t0.ome.tif",
+          "width": 3240,
+          "height": 3840,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": false,
+          "pixelType": "UINT16",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 3240,
+              "height": 3840
+            }
+          ],
+          "channels": [
+            {
+              "name": "DNA",
+              "color": -16776961
+            },
+            {
+              "name": "C1q",
+              "color": -16711936
+            },
+            {
+              "name": "CD15",
+              "color": -65536
+            },
+            {
+              "name": "CD68",
+              "color": -8192
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "z-slice"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 3240,
+          "preferredTileHeight": 40
+        }
+      },
+      "entryID": 2,
+      "randomizedName": "c3fcd0c7-ec7b-48b7-bbf7-07243d951cf5",
+      "imageName": "LowC1q-A02_p1t0.ome.tif",
+      "metadata": {}
+    }
+  ]
+}

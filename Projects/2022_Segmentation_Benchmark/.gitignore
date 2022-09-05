@@ -1,0 +1,4 @@
+figures/*.png
+results/*.csv
+#Software_Projects/QuPath/*/data
+Software_Projects/QuPath/*/data_trash

@@ -1,0 +1,779 @@
+{
+  "version": "0.3.2",
+  "createTimestamp": 1647671044722,
+  "modifyTimestamp": 1647671044722,
+  "uri": "file:/H:/Research/cellXpress_scripting/Benchmarks/2022_Segmentation_Benchmark/Software_Projects/QuPath/3_Lung_Tumors/project.qpproj",
+  "lastID": 36,
+  "images": [
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/H:/Research/2022_07_cX2_Lung_Tumors/Lung_Tumors_Images-JY22010/A01/1A_Core%5B1,4,B%5D_%5B47045,13477%5D_p0t0.tif",
+        "args": [],
+        "metadata": {
+          "name": "1A_Core[1,4,B]_[47045,13477]_p0t0.tif",
+          "width": 2876,
+          "height": 2876,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": false,
+          "pixelType": "UINT16",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 2876,
+              "height": 2876
+            }
+          ],
+          "channels": [
+            {
+              "name": "DNA",
+              "color": -16776961
+            },
+            {
+              "name": "PD-L1",
+              "color": -16711681
+            },
+            {
+              "name": "CD3",
+              "color": -16711936
+            },
+            {
+              "name": "CD68",
+              "color": -256
+            },
+            {
+              "name": "Foxp3",
+              "color": -32768
+            },
+            {
+              "name": "CD8",
+              "color": -65281
+            },
+            {
+              "name": "CK",
+              "color": -52686
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 2876,
+          "preferredTileHeight": 2876
+        }
+      },
+      "entryID": 27,
+      "randomizedName": "a6376f29-c83f-4164-994f-1dbe6df84c36",
+      "imageName": "1A_Core[1,4,B]_[47045,13477]_p0t0.tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/H:/Research/2022_07_cX2_Lung_Tumors/Lung_Tumors_Images-JY22010/A02/1A_Core%5B1,4,C%5D_%5B49995,13546%5D_p0t0.tif",
+        "args": [],
+        "metadata": {
+          "name": "1A_Core[1,4,C]_[49995,13546]_p0t0.tif",
+          "width": 2876,
+          "height": 2876,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": false,
+          "pixelType": "UINT16",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 2876,
+              "height": 2876
+            }
+          ],
+          "channels": [
+            {
+              "name": "DNA",
+              "color": -16776961
+            },
+            {
+              "name": "PD-L1",
+              "color": -16711681
+            },
+            {
+              "name": "CD3",
+              "color": -16711936
+            },
+            {
+              "name": "CD68",
+              "color": -256
+            },
+            {
+              "name": "Foxp3",
+              "color": -32768
+            },
+            {
+              "name": "CD8",
+              "color": -65281
+            },
+            {
+              "name": "CK",
+              "color": -52686
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 2876,
+          "preferredTileHeight": 2876
+        }
+      },
+      "entryID": 28,
+      "randomizedName": "073e0d07-9160-41ba-8d2e-0309f7de37fe",
+      "imageName": "1A_Core[1,4,C]_[49995,13546]_p0t0.tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/H:/Research/2022_07_cX2_Lung_Tumors/Lung_Tumors_Images-JY22010/A03/1A_Core%5B1,4,F%5D_%5B58113,12778%5D_p0t0.tif",
+        "args": [],
+        "metadata": {
+          "name": "1A_Core[1,4,F]_[58113,12778]_p0t0.tif",
+          "width": 2876,
+          "height": 2876,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": false,
+          "pixelType": "UINT16",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 2876,
+              "height": 2876
+            }
+          ],
+          "channels": [
+            {
+              "name": "DNA",
+              "color": -16776961
+            },
+            {
+              "name": "PD-L1",
+              "color": -16711681
+            },
+            {
+              "name": "CD3",
+              "color": -16711936
+            },
+            {
+              "name": "CD68",
+              "color": -256
+            },
+            {
+              "name": "Foxp3",
+              "color": -32768
+            },
+            {
+              "name": "CD8",
+              "color": -65281
+            },
+            {
+              "name": "CK",
+              "color": -52686
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 2876,
+          "preferredTileHeight": 2876
+        }
+      },
+      "entryID": 29,
+      "randomizedName": "a42a9195-78fc-47f0-80b0-a1cccefaa031",
+      "imageName": "1A_Core[1,4,F]_[58113,12778]_p0t0.tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/H:/Research/2022_07_cX2_Lung_Tumors/Lung_Tumors_Images-JY22010/A04/1A_Core%5B1,5,A%5D_%5B44307,15811%5D_p0t0.tif",
+        "args": [],
+        "metadata": {
+          "name": "1A_Core[1,5,A]_[44307,15811]_p0t0.tif",
+          "width": 2876,
+          "height": 2876,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": false,
+          "pixelType": "UINT16",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 2876,
+              "height": 2876
+            }
+          ],
+          "channels": [
+            {
+              "name": "DNA",
+              "color": -16776961
+            },
+            {
+              "name": "PD-L1",
+              "color": -16711681
+            },
+            {
+              "name": "CD3",
+              "color": -16711936
+            },
+            {
+              "name": "CD68",
+              "color": -256
+            },
+            {
+              "name": "Foxp3",
+              "color": -32768
+            },
+            {
+              "name": "CD8",
+              "color": -65281
+            },
+            {
+              "name": "CK",
+              "color": -52686
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 2876,
+          "preferredTileHeight": 2876
+        }
+      },
+      "entryID": 30,
+      "randomizedName": "bca6590e-2829-4f3f-8f19-594f4d208abd",
+      "imageName": "1A_Core[1,5,A]_[44307,15811]_p0t0.tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/H:/Research/2022_07_cX2_Lung_Tumors/Lung_Tumors_Images-JY22010/A05/1A_Core%5B1,6,A%5D_%5B44258,18318%5D_p0t0.tif",
+        "args": [],
+        "metadata": {
+          "name": "1A_Core[1,6,A]_[44258,18318]_p0t0.tif",
+          "width": 2876,
+          "height": 2876,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": false,
+          "pixelType": "UINT16",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 2876,
+              "height": 2876
+            }
+          ],
+          "channels": [
+            {
+              "name": "DNA",
+              "color": -16776961
+            },
+            {
+              "name": "PD-L1",
+              "color": -16711681
+            },
+            {
+              "name": "CD3",
+              "color": -16711936
+            },
+            {
+              "name": "CD68",
+              "color": -256
+            },
+            {
+              "name": "Foxp3",
+              "color": -32768
+            },
+            {
+              "name": "CD8",
+              "color": -65281
+            },
+            {
+              "name": "CK",
+              "color": -52686
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 2876,
+          "preferredTileHeight": 2876
+        }
+      },
+      "entryID": 31,
+      "randomizedName": "33546ad0-84fa-4ac0-9906-676855a7d927",
+      "imageName": "1A_Core[1,6,A]_[44258,18318]_p0t0.tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/H:/Research/2022_07_cX2_Lung_Tumors/Lung_Tumors_Images-JY22010/A06/1C_Core%5B1,2,A%5D_%5B50575,8519%5D_p0t0.tif",
+        "args": [],
+        "metadata": {
+          "name": "1C_Core[1,2,A]_[50575,8519]_p0t0.tif",
+          "width": 2876,
+          "height": 2876,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": false,
+          "pixelType": "UINT16",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 2876,
+              "height": 2876
+            }
+          ],
+          "channels": [
+            {
+              "name": "DNA",
+              "color": -16776961
+            },
+            {
+              "name": "PD-L1",
+              "color": -16711681
+            },
+            {
+              "name": "CD3",
+              "color": -16711936
+            },
+            {
+              "name": "CD68",
+              "color": -256
+            },
+            {
+              "name": "Foxp3",
+              "color": -32768
+            },
+            {
+              "name": "CD8",
+              "color": -65281
+            },
+            {
+              "name": "CK",
+              "color": -52686
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 2876,
+          "preferredTileHeight": 2876
+        }
+      },
+      "entryID": 32,
+      "randomizedName": "6e0d6ea3-389d-422a-a06b-f9726e4b9b6b",
+      "imageName": "1C_Core[1,2,A]_[50575,8519]_p0t0.tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/H:/Research/2022_07_cX2_Lung_Tumors/Lung_Tumors_Images-JY22010/A07/1C_Core%5B1,4,D%5D_%5B58522,13403%5D_p0t0.tif",
+        "args": [],
+        "metadata": {
+          "name": "1C_Core[1,4,D]_[58522,13403]_p0t0.tif",
+          "width": 2876,
+          "height": 2876,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": false,
+          "pixelType": "UINT16",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 2876,
+              "height": 2876
+            }
+          ],
+          "channels": [
+            {
+              "name": "DNA",
+              "color": -16776961
+            },
+            {
+              "name": "PD-L1",
+              "color": -16711681
+            },
+            {
+              "name": "CD3",
+              "color": -16711936
+            },
+            {
+              "name": "CD68",
+              "color": -256
+            },
+            {
+              "name": "Foxp3",
+              "color": -32768
+            },
+            {
+              "name": "CD8",
+              "color": -65281
+            },
+            {
+              "name": "CK",
+              "color": -52686
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 2876,
+          "preferredTileHeight": 2876
+        }
+      },
+      "entryID": 33,
+      "randomizedName": "df2d9b2c-75dd-4da9-ae7d-5647bace8a63",
+      "imageName": "1C_Core[1,4,D]_[58522,13403]_p0t0.tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/H:/Research/2022_07_cX2_Lung_Tumors/Lung_Tumors_Images-JY22010/A08/1C_Core%5B1,4,E%5D_%5B61079,13315%5D_p0t0.tif",
+        "args": [],
+        "metadata": {
+          "name": "1C_Core[1,4,E]_[61079,13315]_p0t0.tif",
+          "width": 2876,
+          "height": 2876,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": false,
+          "pixelType": "UINT16",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 2876,
+              "height": 2876
+            }
+          ],
+          "channels": [
+            {
+              "name": "DNA",
+              "color": -16776961
+            },
+            {
+              "name": "PD-L1",
+              "color": -16711681
+            },
+            {
+              "name": "CD3",
+              "color": -16711936
+            },
+            {
+              "name": "CD68",
+              "color": -256
+            },
+            {
+              "name": "Foxp3",
+              "color": -32768
+            },
+            {
+              "name": "CD8",
+              "color": -65281
+            },
+            {
+              "name": "CK",
+              "color": -52686
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 2876,
+          "preferredTileHeight": 2876
+        }
+      },
+      "entryID": 34,
+      "randomizedName": "ee175c12-c8f8-4326-9748-32143767d9de",
+      "imageName": "1C_Core[1,4,E]_[61079,13315]_p0t0.tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/H:/Research/2022_07_cX2_Lung_Tumors/Lung_Tumors_Images-JY22010/A09/1C_Core%5B1,4,F%5D_%5B63680,13259%5D_p0t0.tif",
+        "args": [],
+        "metadata": {
+          "name": "1C_Core[1,4,F]_[63680,13259]_p0t0.tif",
+          "width": 2876,
+          "height": 2876,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": false,
+          "pixelType": "UINT16",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 2876,
+              "height": 2876
+            }
+          ],
+          "channels": [
+            {
+              "name": "DNA",
+              "color": -16776961
+            },
+            {
+              "name": "PD-L1",
+              "color": -16711681
+            },
+            {
+              "name": "CD3",
+              "color": -16711936
+            },
+            {
+              "name": "CD68",
+              "color": -256
+            },
+            {
+              "name": "Foxp3",
+              "color": -32768
+            },
+            {
+              "name": "CD8",
+              "color": -65281
+            },
+            {
+              "name": "CK",
+              "color": -52686
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 2876,
+          "preferredTileHeight": 2876
+        }
+      },
+      "entryID": 35,
+      "randomizedName": "439c4450-a4d1-41d2-bc20-8af1a135754c",
+      "imageName": "1C_Core[1,4,F]_[63680,13259]_p0t0.tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/H:/Research/2022_07_cX2_Lung_Tumors/Lung_Tumors_Images-JY22010/A10/1C_Core%5B1,6,C%5D_%5B56306,18521%5D_p0t0.tif",
+        "args": [],
+        "metadata": {
+          "name": "1C_Core[1,6,C]_[56306,18521]_p0t0.tif",
+          "width": 2876,
+          "height": 2876,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": false,
+          "pixelType": "UINT16",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 2876,
+              "height": 2876
+            }
+          ],
+          "channels": [
+            {
+              "name": "DNA",
+              "color": -16776961
+            },
+            {
+              "name": "PD-L1",
+              "color": -16711681
+            },
+            {
+              "name": "CD3",
+              "color": -16711936
+            },
+            {
+              "name": "CD68",
+              "color": -256
+            },
+            {
+              "name": "Foxp3",
+              "color": -32768
+            },
+            {
+              "name": "CD8",
+              "color": -65281
+            },
+            {
+              "name": "CK",
+              "color": -52686
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 0.5,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 2876,
+          "preferredTileHeight": 2876
+        }
+      },
+      "entryID": 36,
+      "randomizedName": "668af234-ecc1-43a9-b1a2-2499852d96de",
+      "imageName": "1C_Core[1,6,C]_[56306,18521]_p0t0.tif",
+      "metadata": {}
+    }
+  ]
+}
