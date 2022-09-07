@@ -189,3 +189,29 @@ PlotPerf(
     ylim,
     filename
 )
+
+### Find the average F1-scores
+perf_data %>%
+    mutate(
+        Seg_method = replace(
+            Seg_method, Seg_method == "cX2_merged", "cellXpress2"
+        )
+    ) %>%
+    group_by(Dataset_name, Seg_method) %>%
+    summarise(F1_score = mean(F1_score)) %>%
+    group_by(Seg_method) %>%
+    summarise(F1_score = mean(F1_score)) %>%
+    arrange(F1_score)
+
+### Find the average MMS
+perf_data %>%
+    mutate(
+        Seg_method = replace(
+            Seg_method, Seg_method == "cX2_merged", "cellXpress2"
+        )
+    ) %>%
+    group_by(Dataset_name, Seg_method) %>%
+    summarise(MMS = mean(MMS)) %>%
+    group_by(Seg_method) %>%
+    summarise(MMS = mean(MMS)) %>%
+    arrange(MMS)
