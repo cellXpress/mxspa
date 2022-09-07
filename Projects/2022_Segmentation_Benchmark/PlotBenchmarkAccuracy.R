@@ -122,7 +122,7 @@ PlotPerf <- function(
 
 perf_data <- read_csv(
     here(
-        "Projects", "2022_Segmentation_Benchmark", "results",
+        "Projects", "2022_Segmentation_Benchmark", "final_results",
         "performance.csv"
     ),
     name_repair = make.names,

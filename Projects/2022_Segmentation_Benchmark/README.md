@@ -79,7 +79,8 @@ For other software tools:
 
 2. Run the performance results plotting script
    ```R
-   source("PlotBenchmark.R")   
+   source("PlotBenchmarkAccuracy.R")
+   source("PlotBenchmarkTime.R")
    ```
 
 3. The results will be saved under `results`.

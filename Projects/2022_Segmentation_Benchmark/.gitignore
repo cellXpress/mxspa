@@ -2,5 +2,4 @@ figures/*.png
 results/*.csv
 results/*.pdf
 results/*.png
-final_results/
 Software_Projects/QuPath/*/data_trash
