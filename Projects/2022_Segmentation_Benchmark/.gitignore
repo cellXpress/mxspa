@@ -1,4 +1,5 @@
 figures/*.png
+figures/*.pdf
 results/*.csv
 results/*.pdf
 results/*.png
