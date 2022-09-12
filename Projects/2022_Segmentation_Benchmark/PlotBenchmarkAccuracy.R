@@ -76,7 +76,12 @@ PlotPerf <- function(
             aes(x = MMS, y = F1_score)
         ) +
         geom_point(
-            aes(shape = Seg_method, fill = Seg_method, size = Seg_method)
+            aes(shape = Seg_method, fill = Seg_method, size = Seg_method),
+            data = ~subset(., !(Seg_method %in% c("cX2_merged", "cellXpress2")))
+        ) +
+        geom_point(
+            aes(shape = Seg_method, fill = Seg_method, size = Seg_method),
+            data = ~subset(., Seg_method %in% c("cX2_merged", "cellXpress2"))
         ) +
         scale_fill_manual(
             values = pt_colors,

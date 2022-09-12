@@ -162,6 +162,10 @@ benchmarks = [
                 'filename' : f'{bench_root}/Software_Projects/QuPath/3_Lung_Tumors/rois_final/1A_Core[1,4,B]_[47045,13477]_p0t0-labels.ome.tif'
             },
             {
+                'type': 'deepcell',
+                'filename' : f'{bench_root}/Software_Projects/DeepCell/results_final/1A_Core[1,4,B]_mask.tif'
+            },
+            {
                 'type': 'cellprofiler',
                 'filename' : f'{bench_root}/Software_Projects/CellProfiler/results_final/1A_Core[1,4,B]_[47045,13477]_p0t0_CellMask.tiff'
             }
@@ -191,6 +195,10 @@ benchmarks = [
                 'filename' : f'{bench_root}/Software_Projects/QuPath/3_Lung_Tumors/rois_final/1A_Core[1,4,F]_[58113,12778]_p0t0-labels.ome.tif'
             },
             {
+                'type': 'deepcell',
+                'filename' : f'{bench_root}/Software_Projects/DeepCell/results_final/1A_Core[1,4,F]_mask.tif'
+            },
+            {
                 'type': 'cellprofiler',
                 'filename' : f'{bench_root}/Software_Projects/CellProfiler/results_final/1A_Core[1,4,F]_[58113,12778]_p0t0_CellMask.tiff'
             }
@@ -218,6 +226,10 @@ benchmarks = [
             {
                 'type': 'qupath',
                 'filename' : f'{bench_root}/Software_Projects/QuPath/3_Lung_Tumors/rois_final/1C_Core[1,6,C]_[56306,18521]_p0t0-labels.ome.tif'
+            },
+            {
+                'type': 'deepcell',
+                'filename' : f'{bench_root}/Software_Projects/DeepCell/results_final/1C_Core[1,6,C]_mask.tif'
             },
             {
                 'type': 'cellprofiler',
