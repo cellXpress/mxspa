@@ -6,21 +6,21 @@ library(tidyverse)
 library(RColorBrewer)
 library(here)
 
+### Common definitions
+all_seg_labels <- c(
+    cellprofiler = "Propagation (CellProfiler)",
+    qupath = "StarDist (QuPath)",
+    deepcell = "Mesmer (DeepCell)",
+    cellXpress1 = "Watershed (cellXpress 1/2)",
+    cX2_merged = "CellShape AI (cellXpress 2)",
+    cellXpress2 = "CellShape AI (cellXpress 2)"
+)
+
 PlotPerf <- function(
     dataset_name,
     xlim, ylim,
     filename
 ) {
-    ### Common definitions
-    all_seg_labels <- c(
-        cellprofiler = "Propagation (CellProfiler)",
-        qupath = "StarDist (QuPath)",
-        deepcell = "Mesmer (DeepCell)",
-        cellXpress1 = "Watershed (cellXpress 2)",
-        cX2_merged = "CellShape AI (cellXpress 2)",
-        cellXpress2 = "CellShape AI (cellXpress 2)"
-    )
-
     all_pt_shapes <- c(
         cellprofiler = 25,
         qupath = 24,
@@ -195,8 +195,12 @@ PlotPerf(
     filename
 )
 
+all_seg_colors <- rev(brewer.pal(length(all_seg_labels) - 1, "Set1"))
+all_seg_colors <- c(all_seg_colors, all_seg_colors[length(all_seg_colors)])
+names(all_seg_colors) <- names(all_seg_labels)
+
 ### Find the average F1-scores
-perf_data %>%
+plot_data <- perf_data %>%
     mutate(
         Seg_method = replace(
             Seg_method, Seg_method == "cX2_merged", "cellXpress2"
@@ -208,8 +212,53 @@ perf_data %>%
     summarise(F1_score = mean(F1_score)) %>%
     arrange(F1_score)
 
+seg_methods <- as.character(plot_data$Seg_method)
+seg_labels <- all_seg_labels[seg_methods]
+seg_colors <- all_seg_colors[seg_methods]
+
+f1_plot <- plot_data %>%
+    mutate(
+        Seg_method = fct_relevel(Seg_method, seg_methods)
+    ) %>%
+    ggplot(
+        aes(x = Seg_method, y = F1_score, fill = Seg_method)
+    ) +
+    geom_bar(
+        stat = "identity",
+        position = "dodge",
+        width = 0.75,
+        color = "black"
+    ) +
+    scale_x_discrete(
+        name = "",
+        labels = seg_labels
+    ) +
+    scale_y_continuous(
+        name = "F1 score",
+        limits = c(0, 1)
+    ) +
+    scale_fill_manual(
+        values = seg_colors,
+        breaks = rev(seg_methods),
+        guide = "none"
+    ) +
+    coord_flip() +
+    theme_classic() +
+    theme(
+        axis.text = element_text(color = "black")
+    )
+
+ggsave(
+    here(
+        "Projects", "2022_Segmentation_Benchmark", "results",
+        "F1_score_mean.pdf"
+    ),
+    plot = f1_plot,
+    width = 3.5, height = 1.25, units = "in", dpi = 400
+)
+
 ### Find the average MMS
-perf_data %>%
+plot_data <- perf_data %>%
     mutate(
         Seg_method = replace(
             Seg_method, Seg_method == "cX2_merged", "cellXpress2"
@@ -220,3 +269,48 @@ perf_data %>%
     group_by(Seg_method) %>%
     summarise(MMS = mean(MMS)) %>%
     arrange(MMS)
+
+seg_methods <- as.character(plot_data$Seg_method)
+seg_labels <- all_seg_labels[seg_methods]
+seg_colors <- all_seg_colors[seg_methods]
+
+mms_plot <- plot_data %>%
+    mutate(
+        Seg_method = fct_relevel(Seg_method, seg_methods)
+    ) %>%
+    ggplot(
+        aes(x = Seg_method, y = MMS, fill = Seg_method)
+    ) +
+    geom_bar(
+        stat = "identity",
+        position = "dodge",
+        width = 0.75,
+        color = "black"
+    ) +
+    scale_x_discrete(
+        name = "",
+        labels = seg_labels
+    ) +
+    scale_y_continuous(
+        name = "MMS",
+        limits = c(0, 1)
+    ) +
+    scale_fill_manual(
+        values = seg_colors,
+        breaks = rev(seg_methods),
+        guide = "none"
+    ) +
+    coord_flip() +
+    theme_classic() +
+    theme(
+        axis.text = element_text(color = "black")
+    )
+
+ggsave(
+    here(
+        "Projects", "2022_Segmentation_Benchmark", "results",
+        "MMS_score_mean.pdf"
+    ),
+    plot = mms_plot,
+    width = 3.5, height = 1.25, units = "in", dpi = 400
+)

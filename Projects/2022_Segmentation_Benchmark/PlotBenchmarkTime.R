@@ -34,7 +34,7 @@ plot_data <- read_csv(
 #seg_methods <- names(all_seg_labels)[
 #    names(all_seg_labels) %in% plot_data$Method
 #]
-seg_methods <- c("cellXpress2", "cellprofiler", "qupath",  "cellXpress1")
+seg_methods <- c("cellprofiler", "qupath",  "cellXpress2", "cellXpress1")
 
 ### Make sure all other configs are in the same order
 seg_labels <- all_seg_labels[seg_methods]
@@ -56,7 +56,8 @@ time_plot <- plot_data %>%
         name = NULL,
         values = pt_colors,
         breaks = c("cellXpress2", "cellXpress1", "qupath", "cellprofiler"),
-        labels = seg_labels
+        labels = seg_labels,
+        guide = "none"
     ) +
     scale_x_discrete(
         labels = function(x) stringr::str_wrap(x, width = 8)
@@ -74,7 +75,7 @@ time_plot <- plot_data %>%
 
 ggsave(
     here(
-        "Projects", "2022_Segmentation_Benchmark", "figures",
+        "Projects", "2022_Segmentation_Benchmark", "results",
         "win_execution_time.png"
     ),
     plot = time_plot,
@@ -83,7 +84,7 @@ ggsave(
 
 ggsave(
     here(
-        "Projects", "2022_Segmentation_Benchmark", "figures",
+        "Projects", "2022_Segmentation_Benchmark", "results",
         "win_execution_time.pdf"
     ),
     plot = time_plot,

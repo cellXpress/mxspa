@@ -46,6 +46,10 @@ benchmarks = [
                 'filename' : f'{bench_root}/Software_Projects/QuPath/1_BEAS2B_Lung_Cells/rois_final/JY15135-B05_p2t0.ome.tif - Image0-labels.ome.tif'
             },
             {
+                'type': 'deepcell',
+                'filename' : f'{bench_root}/Software_Projects/DeepCell/results_final/BEAS2B_B05_p2.tif'
+            },
+            {
                 'type': 'cellprofiler',
                 'filename' : f'{bench_root}/Software_Projects/CellProfiler/results_final/JY15135-B05_p2t0.ome_CellMask.tiff'
             }
@@ -73,6 +77,10 @@ benchmarks = [
             {
                 'type': 'qupath',
                 'filename' : f'{bench_root}/Software_Projects/QuPath/1_BEAS2B_Lung_Cells/rois_final/JY15135-B05_p3t0.ome.tif - Image0-labels.ome.tif'
+            },
+            {
+                'type': 'deepcell',
+                'filename' : f'{bench_root}/Software_Projects/DeepCell/results_final/BEAS2B_B05_p3.tif'
             },
             {
                 'type': 'cellprofiler',
@@ -104,6 +112,10 @@ benchmarks = [
                 'filename' : f'{bench_root}/Software_Projects/QuPath/1_BEAS2B_Lung_Cells/rois_final/JY15135-C11_p2t0.ome.tif - Image0-labels.ome.tif'
             },
             {
+                'type': 'deepcell',
+                'filename' : f'{bench_root}/Software_Projects/DeepCell/results_final/BEAS2B_C11_p2.tif'
+            },
+            {
                 'type': 'cellprofiler',
                 'filename' : f'{bench_root}/Software_Projects/CellProfiler/results_final/JY15135-C11_p2t0.ome_CellMask.tiff'
             }
@@ -131,6 +143,10 @@ benchmarks = [
             {
                 'type': 'qupath',
                 'filename' : f'{bench_root}/Software_Projects/QuPath/1_BEAS2B_Lung_Cells/rois_final/JY15135-C11_p3t0.ome.tif - Image0-labels.ome.tif'
+            },
+            {
+                'type': 'deepcell',
+                'filename' : f'{bench_root}/Software_Projects/DeepCell/results_final/BEAS2B_C11_p3.tif'
             },
             {
                 'type': 'cellprofiler',
