@@ -97,12 +97,6 @@ def DrawSegPerf(rois, segmask, roi_def):
     cmap = plt.get_cmap("viridis", scale_num)
     img_out = np.zeros((segmask.shape[0], segmask.shape[1], 4), np.uint8)
 
-    ### Determine line width
-    if (roi_def.right - roi_def.left + 1) > 1000:
-        line_width = 2
-    else:
-        line_width = 1
-
     ### Draw the ground truth
     np.random.seed(0)
     for roi in rois:
@@ -111,7 +105,13 @@ def DrawSegPerf(rois, segmask, roi_def):
         #color = (color[0], color[1], color[2], 0.5)
         color = tuple(np.floor(255*x) for x in color)
         cv2.drawContours(img_out, [contour], 0, color, -1)
-    
+
+    ### Determine line width
+    if (roi_def.right - roi_def.left + 1) > 1000:
+        line_width = 2
+    else:
+        line_width = 1
+
     ### Draw the segmask
     cell_ids = FindCellIDs(segmask, roi_def)
     for cell_id in cell_ids:
@@ -123,9 +123,9 @@ def DrawSegPerf(rois, segmask, roi_def):
     img_out = cv2.cvtColor(img_out, cv2.COLOR_RGB2BGR)
     return img_out
 
-def DrawROI(rois, segmask, roi_def):
+def DrawROI(rows: int, cols: int, rois):
     """
-    Draw ROI over seg mask
+    Draw ROI
     ----------------------------------------------------------------------------
     """
     #img_out = cv2.normalize(segmask, dst=None, alpha=0, beta=255, norm_type=cv2.NORM_MINMAX)
@@ -140,13 +140,7 @@ def DrawROI(rois, segmask, roi_def):
     #cmap = plt.get_cmap("viridis", 256)
     scale_num = 256
     cmap = plt.get_cmap("viridis", scale_num)
-    img_out = np.zeros((segmask.shape[1], segmask.shape[2], 4), np.uint8)
-
-    ### Determine line width
-    if (roi_def.right - roi_def.left + 1) > 1000:
-        line_width = 2
-    else:
-        line_width = 1
+    img_out = np.zeros((rows, cols, 4), np.uint8)
 
     ### Draw the ground truth
     alpha = 0.25
@@ -158,7 +152,7 @@ def DrawROI(rois, segmask, roi_def):
         color = (color[0], color[1], color[2], 1)
         color = tuple(np.floor(255*x) for x in color)
         
-        cell_out = np.zeros((segmask.shape[1], segmask.shape[2], 4), np.uint8)
+        cell_out = np.zeros((rows, cols, 4), np.uint8)
         cv2.drawContours(cell_out, [contour], 0, color, -1)
         #if roi_idx == 100:
         #    cv2.imwrite('figures3/img_out.png', img_out)
@@ -169,8 +163,23 @@ def DrawROI(rois, segmask, roi_def):
         #img_out = cv2.addWeighted(img_out, 1-alpha, cell_out, alpha, 0)
         #if roi_idx == 100:
         #    cv2.imwrite('figures3/img_out2.png', img_out)
-        #    sys.exit('My error message')
+        #    sys.exit('My error message')    
+
+    return img_out
+
+def DrawROISegmask(rois, segmask, roi_def):
+    """
+    Draw ROI over seg mask
+    ----------------------------------------------------------------------------
+    """
+    ### Draw the ROIs
+    img_out = DrawROI(segmask.shape[1], segmask.shape[2], rois)
         
+    ### Determine line width
+    if (roi_def.right - roi_def.left + 1) > 1000:
+        line_width = 2
+    else:
+        line_width = 1
     
     ### Draw the segmask
     cell_ids = FindCellIDs(segmask, roi_def)

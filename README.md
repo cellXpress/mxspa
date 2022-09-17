@@ -31,7 +31,7 @@ single-cell spatial data (RNAs, proteins, and metabolites).
 
 * Reference data sets
     * Segmentation annotations in ImageJ ROI format for the following data sets:
-        | Data set name      | Marker number | Imaging method | Year  |
+        | Data set name      | Marker number | Imaging/staining method | Year  |
         |--------------------|:-------------:|----------------|-------|
         | [BEAS-2B lung cells](./Reference_data/Annotations/2022_BEAS2B_Lung_Cells/) | 4 | IF | 2022  |
         | [COVID lung tissues](./Reference_data/Annotations/2022_COVID_Lung_Tissues/) | 4 | PANINI | 2022  |

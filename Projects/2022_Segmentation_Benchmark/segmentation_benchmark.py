@@ -450,7 +450,7 @@ for benchmark_idx, benchmark in enumerate(benchmarks):
             perf_scores_tmp.append(perf_scores_cur)
 
             ### Save the output
-            img_outline = DrawROI(rois, segmask, roi_def)
+            img_outline = DrawROISegmask(rois, segmask, roi_def)
             
             cv2.imwrite(
                 f"{bench_root}/figures/{benchmark['name']}_{roi_name}_{seg_opt['type']}.png",
@@ -458,10 +458,14 @@ for benchmark_idx, benchmark in enumerate(benchmarks):
                 #img_outline
             )
 
-            #cv2.imwrite(
-            #    f"{project_dir}/Analysis/220311_cellXpress_Benchmark/figures3/{benchmark['name']}_{roi_name}_{seg_opt['type']}_perf.png",
-            #    segmask_colored[roi_def.top:roi_def.bottom,roi_def.left:roi_def.right]
-            #)
+            ### Save the ROI only
+            img_roi = DrawROI(segmask.shape[1], segmask.shape[2], rois)
+            img_roi = cv2.cvtColor(img_roi, cv2.COLOR_RGB2BGR)
+
+            cv2.imwrite(
+                f"{bench_root}/figures/{benchmark['name']}_{roi_name}_.png",
+                img_roi
+            )
 
         ### Add the results
         perf_scores.append(
