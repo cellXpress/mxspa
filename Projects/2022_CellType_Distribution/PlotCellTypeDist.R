@@ -8,9 +8,6 @@ here::i_am("PlotCellTypeDist.R")
 ### Load the cX raw_data
 cX_data <- read_csv(here("data", paste0("Tonsil_Tissues.csv")))
 
-col_exclude <- c("Slide","total_intensity","stddev","skewness","kurtosis","pct")
-cX_data_trim <- select(cX_data, -contains(col_exclude))
-
 cX_subpop <- cX_data %>%
     mutate(
         celltype = case_when(

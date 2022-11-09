@@ -8,7 +8,6 @@
 - [Introduction](#introduction)
 - [Components](#components)
 - [Installation](#installation)
-- [Development](#development)
 - [Acknowledgement](#acknowledgement)
 - [Licenses](#licenses)
 
