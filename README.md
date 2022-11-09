@@ -1,8 +1,7 @@
 # Multiplex Spatial Analysis (MxSPA) Toolbox <!-- omit in toc -->
 
 <p align="center">
-    <img src="./images/tonsil_subpop2.png" alt="MxSPA Toolbox"><br>
-    <em>Multiplex tonsil tissues by Jiang Lab, BIDMC, HMS. © 2022, <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.</em>
+    <img src="./images/tonsil_subpop2.png" alt="MxSPA Toolbox">
 </p>
 
 - [Introduction](#introduction)
@@ -26,7 +25,6 @@ single-cell spatial data (RNAs, proteins, and metabolites).
 ## Components
 * General scripting libraries
     * [pycXlib](./PythonLib/pycXlib/README.md) - Python library for accessing and analyzing cellXpress 2 data
-    * Sizun's subpopulation clustering method
 
 * Reference data sets
     * Segmentation annotations in ImageJ ROI format for the following data sets:
@@ -40,7 +38,8 @@ single-cell spatial data (RNAs, proteins, and metabolites).
 * Projects using the MxSPA Toolbox
     * [Tissue segmentation benchmark of cellXpess 2, DeepCell, QuPath, and
       CellProfiler (2022)](Projects/2022_Segmentation_Benchmark/README.md)
-    * Tonsil subpopulation clustering (2022)
+    * [FlowSOM clustering of cellXpress 2 data (2022)](Projects/2022_FlomSOM_Clustering/)
+    * [Cell-type distribution plots based on FlowSOM clustering results (2022)](Projects/2022_CellType_Distribution/)
 
 ## Installation
 1. To clone the MxSPA toolbox to your project folder
